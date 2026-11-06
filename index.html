@@ -18,6 +18,7 @@
 'use strict';
 /* 1) Firebase Console > 프로젝트 설정 > 웹 앱에서 아래 설정값을 입력하세요. */
 const firebaseConfig = {apiKey: "AIzaSyDudVMU9naVRRZJolbn7aK5mE32qNB1wrg",authDomain: "ieummmmm.firebaseapp.com",projectId: "ieummmmm",storageBucket: "ieummmmm.firebasestorage.app",messagingSenderId: "1034433552330",appId: "1:1034433552330:web:e99cc9c5b2ff1022eb3933",measurementId: "G-4WWMZHN9TW"};
+const FIREBASE_CONFIG = firebaseConfig;
 const $=id=>document.getElementById(id), esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const names={members:'멤버',ranks:'직급',tasks:'업무',projects:'프로젝트',revenue:'수익',schedules:'일정',announcements:'공지'};
 const collections=['members','ranks','tasks','projects','revenue','schedules','announcements'];
